@@ -1,0 +1,362 @@
+html {
+    background-image: url("../imagenes/fondoplaneta.jpg");
+    background-size: cover;
+    opacity: 0.9;
+    min-width: 900px;
+    min-height: 500px;
+}
+
+body {
+    width: 99%;
+    height: 100%;
+    min-width: 900px;
+    min-height: 500px;
+    overflow: scroll;
+}
+
+main {
+    width: 100%;
+    height: 99%;
+}
+
+@font-face{
+    font-family:  "nasa";
+    src:  url('../fuentes/nasalization/nasalization-rg.otf');
+}
+
+@font-face{
+    font-family:  "nasa2";
+    src:  url('../fuentes/nasa21/Nasa21.ttf');
+}
+
+
+/*-----------------------------------------CABECERA--------------------------------------------*/
+header {
+    border-radius: 0px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 23%;
+    background-image: url(../imagenes/fondonasa.htm);
+    background-size: cover;
+    overflow: visible;
+    min-width: 100%;
+    min-height: 23%;
+}
+
+h1 {
+    color: snow;
+    width: 100%;
+    top: -40%;
+    position: absolute;
+    font-family:  "nasa";
+    font-size: 100px;
+}
+
+header li {
+    border-radius: 5px;
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    top: 75%;
+    left: 47.5%;
+    background-color: snow;
+    overflow: visible;
+    
+}
+
+
+h3 {
+    width: 100%;
+    top: -40%;
+    position: absolute;
+    font-family:  "nasa";
+}
+
+nav {
+    background-color: black;
+    width: 100px;
+    margin-top: 100px;
+    margin-right: 2%;
+    float: right;
+    
+}
+
+
+
+#rrss {
+    display: inline-block;
+}
+
+#buscador {
+    position: absolute;
+    top: 75%;
+    right: 2%;
+}
+
+#lupa {
+    background-color: #101110;
+    position: relative;
+    top: 7px;
+    right: -3%;
+    width: 30px;
+    height: 22px;
+}
+
+#lupa:hover {
+    border-radius: 10px;
+    background-color: snow;
+}
+
+input {
+    border-radius: 10px;
+    background-color: #101110e0;
+    color: white;
+    font-family:  "nasa";
+}
+
+header button {
+    
+    background-color: snow;
+    font-family:  "nasa";
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: 133px;
+    float: left;
+}
+
+header button:hover {
+    background-color: #121312;
+    color:#e9f3e9;
+}
+header button:hover > a {
+    background-color: snow;
+    color: #101110;
+}
+
+header button:hover{
+    background-color: rgb(19, 18, 18);
+    color: snow;
+}
+
+h3:hover {
+    background-color: #101110;
+    color: white;
+}
+
+h3:hover > li{
+    background-color: #101110;
+}
+
+/*------------------------------------contenedor del desplegable----------------------------*/
+
+#d1{
+    top: 0%;
+    border-radius: 5px;
+    list-style: none;
+    text-align: left;
+    background-color: rgb(12, 12, 20);
+    position: absolute;
+    right: -110%;
+    width: 85px;
+    height: 0px;
+    z-index: 1;
+}
+
+.link {
+    border-radius: 5px;
+    width: 100%;
+    float: left;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    display: none;
+    font-family:  "nasa";
+    font-size: small;
+}
+
+a:hover {
+    background-color: snow;
+    color: black;
+}
+
+/*-----------------------------------------DESPLEGABLE--------------------------------------------*/
+h3:hover > #d1{
+    height: 170px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+h3:hover > #d1 > .link{
+    display:block;
+}
+
+li:hover > #d1{
+    height: 160px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+li:hover > #d1 > .link{
+    display:block;
+}
+:not(li:hover > #d1){
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+ }
+ 
+:not(li:hover > #d1 > .link){
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+ }
+
+
+/*-----------------------------------------GENERAL--------------------------------------------*/
+
+.cuadro {
+    background-clip: padding-box;
+    border: 10px solid rgba(255, 255, 255, 0.801);
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.texto {
+    text-align: center;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    right: 0px;
+    top: 0px;
+    background: rgba(0,0,0,0.9);
+    height: 0px;
+    opacity: 0.5;
+    width: 361px;
+    overflow: hidden;
+    transform: rotate(-33.5deg) translate(-112px,166px);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease-in-out 0.3s;
+}
+
+.fondo1 {
+    position: absolute;
+    background-color: rgba(15, 37, 231, 0.5);
+    height: 400px;
+    width: 400px;
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+    right: 0px;
+    transform: rotate(56.5deg) translateX(-200px);
+    transform-origin: 100% 0%;
+}
+
+.fondo2 {
+    position: absolute;
+    background-color: rgba(15, 37, 231, 0.5);
+    height: 400px;
+    width: 400px;
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+    top: auto;
+    bottom: 0px;
+    transform: rotate(56.5deg) translateX(200px);
+    transform-origin: 0% 100%;
+}
+
+.texto h2 {
+    border-radius: 10px;
+    background: rgb(105, 99, 99, 0.3);
+    font-family:  "nasa";
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 20px 40px 0px 40px;
+    color: snow;
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+p {
+    word-spacing: 2px;
+    background-color: rgba(10, 10, 10, 0.7);
+    font-family:  "nasa2";
+    font-size: 16px;
+    color: white;
+
+}
+
+.cuadro:hover > .texto {
+    height: 120px;
+    width: 300px;
+    opacity: 0.9;
+    top: 40px;
+    transform: rotate(0deg) translate(0px,0px);
+}
+
+.cuadro:hover .fondo1 {
+    transition-delay: 0s;
+    transform: rotate(56.5deg) translateX(15px);
+}
+.cuadro:hover .fondo2 {
+    transition-delay: 0s;
+    transform: rotate(56.5deg) translateX(-10px);
+}
+
+.cuadro:hover .enlace {
+    overflow: visible;
+    height: 120px;
+    width: 300px;
+    opacity: 0.9;
+    top: 40px;
+    transform: rotate(0deg) translate(0px,0px);
+}
+
+.enlace:hover {
+    color: rgb(22, 21, 21);
+    background-color: #37ed37;
+}
+
+
+
+/*-----------------------------------------CUADROS--------------------------------------------*/
+/*-----------------------------------------DEMO2--------------------------------------------*/
+#demo9 {
+    left: 35%;
+    top: 21%;
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    min-width: 600px;
+    min-height: 400px;
+}
+#cuadro1{
+    top: 10%;
+    left: -15%;
+}
+
+#cuadro2{
+    top: 10%;
+    left: 45%;
+}
+
+#cuadro3{
+    top: 70%;
+    left: -15%;
+}
+
+#cuadro4{
+    top: 70%;
+    left: 45%;
+}
+
